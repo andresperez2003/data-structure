@@ -1,0 +1,143 @@
+
+# Comment one line
+'''
+    Author: Andres Perez
+    Date: 20/01/2023
+    Topic: Primera clase (Conceptos iniciales)
+'''
+print("Hellow from main.py ")
+
+#Inicialize variable
+user_name = 'Yaneth'
+age = 32
+gender = 'se'
+is_active = True
+height = 1.54
+
+#Inicialize list
+pets=[]
+pets = ['Dog','Cat']
+
+
+#Conditionals
+if age > 17:
+    print("Es mayor de edad")
+elif age<60:
+    print("No es mayor de edad")
+
+#Shift + Tab devuelve una tabulacion
+
+if gender == 'F' or gender == 'f':
+    print("Femenino")
+elif gender == 'M' or gender == 'm':
+    print("Masculino")
+elif gender == 'NB' or gender == 'nb':
+    print("No binario")
+elif gender == 'SE' or gender == 'se':
+    print('Sin especificar')
+else:
+    print(" >>> Opcion invalida <<<")
+
+
+'''
+    Funciones con texto: texto.lower() texto.upper() texto.capitalize()
+    user_name.lower() --> yaneth
+    user_name.upper() --> YANETH
+    user_name.capitalize() --> Yaneth
+    
+    lower() --> Convierte todo el texto en minuscula
+    upper() --> Convierte todo el texto en mayuscula
+    capitalize() --> Convierte el primer caracter en mayuscula y el resto en minuscula
+'''
+
+print(user_name)
+print(user_name.lower())
+print(user_name.upper())
+print(user_name.capitalize()) 
+
+# --------- Code implements upper() function
+if gender.upper() == 'F':
+    print("Femenino")
+elif gender.upper() == 'M':
+    print("Masculino")
+elif gender.upper() == 'NB':
+    print("No binario")
+elif gender.upper() == 'SE':
+    print('Sin especificar')
+else:
+    print(" >>> Opcion invalida <<<")
+
+#Show list content
+print(pets)
+
+##Show list length , use the function len(list)
+print(len(pets))
+
+#Interpolacion de mensajes
+print(f'{user_name} tiene {age} años')
+
+#Show content of specific index in list
+print(pets[0])
+print(pets[1])
+
+# -------------- For cicle -----------------
+
+#Iterar 10 veces
+for i in range(0,10):
+    print(i)
+
+for i in range(10):
+    print(i)
+
+for i in range(1,11):
+    print(i)
+
+# ---------------- While -----------------
+#Iterar 10 veces
+counter=0
+while counter<10:
+    print("Hellow")
+    counter+=1 
+
+Tipos de estructura
+
+Listas (Mutable) :  ---> Se usan [] 
+    Añadir elemento
+        -Inicio
+        -Cualquier posicion
+        -final
+
+    Eliminar elemento
+        -Inicio
+        -Cualquier posicion
+        -final
+
+    Consultar un elemento y modificar su valor
+
+Tuplas (Inmutable): ---> se usa ()
+    Declarar una tupla --> info_pet = ("Dante", "m", "dog")
+
+
+
+Lista que anida Tuplas
+pet_list=[]
+pet_list=[("Dante","dog", 4, "m"),("Homero","cat", 1, "m")]
+
+Consultar tipo mascota de la 2° mascota
+pet_list[1][1]
+
+Consultar nombre de la primera mascota
+pet_list[0][0]
+
+Listas
+    Añadir elemento al final  ---> .append(value)
+    Añadir elemento al inicio de la list ---> .insert(index, value)
+    Aañadir elemento en una posicion especifica ---> .insert(index, value)
+
+    Eliminar ultimo elemento ---> .pop()
+    Eliminar elemento en una posicion especifica especifica ---> .pop(index)
+
+
+
+
+
